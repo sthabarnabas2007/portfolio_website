@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Barnabas Shrestha, Computer Engineering student at Kathmandu University.">
+  <title>Barnabas Shrestha | Computer Engineering Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      const saved = localStorage.getItem("portfolio-theme");
+      const theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Barnabas Shrestha home">
+        <img class="brand-logo brand-logo-light" src="assets/logo-bs-light.png" alt="" width="28" height="28">
+        <img class="brand-logo brand-logo-footer" src="assets/logo-bs-footer.png" alt="" width="28" height="28">
+        <span>Barnabas Shrestha</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" id="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Turning ideas into <em>working devices</em> and <em>smart software</em>.</h1>
+        <p class="hero-summary">Hi, I’m Barnabas—a Computer Engineering student at Kathmandu University. I love connecting sensors, code, and AI to turn repetitive, everyday tasks into simple, working tools.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work</a>
+          <a class="button button-secondary" href="assets/Barnabas-Shrestha-Resume.pdf" target="_blank" rel="noopener noreferrer">View Résumé</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="assets/profile.jpeg" alt="Portrait of Barnabas Shrestha">
+        </div>
+        <a class="education-strip" href="https://ku.edu.np" target="_blank" rel="noopener noreferrer" aria-label="Visit Kathmandu University">
+          <img class="ku-logo" src="assets/ku-logo.png" alt="Kathmandu University logo" width="36" height="36">
+          <div><strong>B.E. in Computer Engineering</strong><span>Kathmandu University · Dhulikhel, Nepal</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about section shell" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-kicker">ABOUT</p>
+      </div>
+      <h2 id="about-title" class="sr-only">About Barnabas Shrestha</h2>
+      <div class="about-grid">
+        <p class="about-mindset">I’ve always loved taking things apart just to see how they work. For me, engineering isn't just about textbooks—it's about staying curious, experimenting with new ideas, and building things that actually help people in their day-to-day lives.</p>
+        <div class="about-copy">
+          <p>I’m a Computer Engineering student who loves bridging the gap between <span class="text-accent">physical gadgets and smart software</span>. Whether I'm wiring up sensors to monitor plants or setting up simple tools that handle boring, repetitive chores automatically, I learn best by getting my hands dirty and building from scratch.</p>
+          <p>My goal is simple: to create <span class="text-accent">practical, easy-to-use tech</span> that quietly makes everyday life a little smoother.</p>
+        </div>
+      </div>
+      <div class="about-summary">
+  <div><span>FOCUS</span><strong>Smart Everyday Gadgets</strong></div>
+  <div><span>APPROACH</span><strong>Learning by Building</strong></div>
+  <div><span>CURRENTLY</span><strong>Automating Daily Tasks &amp; Sensor Projects</strong></div>
+</div>
+    </section>
+
+    <section class="projects section shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="section-kicker">PROJECTS</p>
+      </div>
+      <h2 id="projects-title" class="sr-only">Selected projects</h2>
+
+      <div class="project-grid">
+        <article class="project-feature project-card">
+          <div class="project-media">
+            <div class="project-image-main"><img src="assets/farming-team.jpeg" alt="Barnabas and team presenting the IoT-based smart farming system"></div>
+            <div class="project-image-grid">
+              <img src="assets/farming-mobile-1.jpeg" alt="Smart farming mobile dashboard showing sensor readings">
+              <img src="assets/farming-mobile-2.jpeg" alt="Smart farming monitoring charts and IP address">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>IoT-Based Advanced Farming System</h3>
+              <p>A hands-on IoT based smart farming prototype built to keep track of soil conditions and surroundings so plants get what they need at the right time.</p>
+            <ul class="project-details">
+              <li>ESP32 and sensor integration</li>
+              <li>Blynk-based IoT monitoring and control</li>
+              <li>Local HTML, CSS, and JavaScript dashboard</li>
+              <li>Hardware-software integration and debugging</li>
+            </ul>
+            <div class="architecture" aria-label="System architecture">
+              <span>Sensors</span><b>→</b><span>ESP32</span><b>→</b><span>Blynk / Local Web Dashboard</span>
+            </div>
+            <p class="challenge"><strong>Challenge solved:</strong> Fixed unexpected board reboots and prevented hardware burnout caused by unstable power delivery.</p>
+            <!-- TODO: Add GitHub repository URL here when available. -->
+            <a class="github-button" href="#" aria-label="GitHub repository link placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="coming-soon project-card">
+          <div class="coming-mark" aria-hidden="true">02</div>
+          <div class="coming-copy">
+            <p class="card-overline">NEXT PROJECT</p>
+            <h3>More projects coming soon</h3>
+            <p>I’m exploring n8n workflow automation and Edge AI systems, with a focus on practical end-to-end solutions.</p>
+            <div class="coming-tags"><span>n8n</span><span>Edge AI</span><span>Automation</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" aria-labelledby="skills-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">SKILLS</p>
+          <h2 id="skills-title">What I have learned — and what I'm exploring next.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-panel learned">
+            <div class="panel-heading"><h3>LEARNED</h3><p>Tools &amp; technologies I’ve built projects with</p></div>
+            <div class="skill-category"><h4>Languages</h4><div class="pills"><span>C</span><span>C++</span><span>Python</span><span>JavaScript</span></div></div>
+            <div class="skill-category"><h4>Web &amp; Interfaces</h4><div class="pills"><span>HTML</span><span>CSS</span></div></div>
+            <div class="skill-category"><h4>Workflow Automation</h4><div class="pills"><span>n8n</span><span>API Integration</span><span>Webhooks</span></div></div>
+            <div class="skill-category"><h4>Hardware, Tools &amp; Docs</h4><div class="pills"><span>ESP32</span><span>Arduino IDE</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>LaTeX</span><span>MS Office</span><span>LibreOffice</span></div></div>
+          </article>
+          <article class="skill-panel exploring">
+            <div class="panel-heading"><h3>EXPLORING</h3><span class="learning-status"><i></i>For learning</span><p>Technologies I’m diving into next</p></div>
+            <div class="skill-category"><h4>Edge AI &amp; Embedded ML</h4><div class="pills"><span>TinyML</span><span>On-Device Inference</span><span>NVIDIA Jetson</span></div></div>
+            <div class="skill-category"><h4>Machine Learning &amp; Data</h4><div class="pills"><span>NumPy</span><span>Scikit-Learn / PyTorch</span><span>Computer Vision</span></div></div>
+            <div class="skill-category"><h4>Systems &amp; Deployment</h4><div class="pills"><span>Linux</span><span>Docker</span><span>Microcontroller Architecture</span></div></div>
+          </article>
+        </div>
+        <div class="interest-section">
+          <p class="interest-title">AREAS OF INTEREST &amp; EXPLORATION</p>
+          <div class="interest-grid">
+            <article><span>01</span><h3>AI &amp; Machine Learning</h3><p>Deep Learning, Generative AI, NLP, and Neural Networks.</p></article>
+            <article><span>02</span><h3>Edge AI &amp; TinyML</h3><p>On-device AI, model optimization, and real-time inference.</p></article>
+            <article><span>03</span><h3>Computer Vision</h3><p>Image Processing, Object Detection, and Visual Recognition.</p></article>
+            <article><span>04</span><h3>Embedded Systems &amp; IoT</h3><p>Raspberry Pi and sensor integration.</p></article>
+            <article><span>05</span><h3>AI Automation</h3><p>AI Agents, Workflow Automation, APIs, and MCP.</p></article>
+            <article><span>06</span><h3>Robotics &amp; Intelligent Systems</h3><p>Autonomous Systems and Sensor Fusion.</p></article>
+            <article><span>07</span><h3>Cloud &amp; Edge Computing</h3><p>Distributed AI and Edge-Cloud Integration.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="experience section shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <p class="section-kicker">BEYOND THE CLASSROOM</p>
+        <h2 id="experience-title">Learning and community.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-left"><p class="card-overline">WORKSHOP · DHULIKHEL, NEPAL</p><h3>Edge AI with NVIDIA Jetson Nano</h3><p>From Setup to Real-Time AI Applications · KUITC</p></div><p class="takeaway">Explored the basics of running AI directly on small devices—learning how smart software can work on its own without needing the cloud.</p></article>
+        <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-left"><p class="card-overline">WORKSHOP · DHULIKHEL, NEPAL</p><h3>Basic Robotic 102</h3><p>Kathmandu University Robotics Club</p></div><p class="takeaway">Learned how to properly write and upload code to a controller board using the Arduino software, and practiced connecting different sensors to make a basic robot respond to its surroundings.</p></article>
+        <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-left"><p class="card-overline">VOLUNTEERING PROGRAM</p><h3>100s Group</h3><p>Community &amp; Social Program Volunteer</p></div><p class="takeaway">Volunteered in community outreach and social welfare programs, working directly with people and helping carry out meaningful local initiatives.</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <div class="contact-heading">
+          <div><h2 id="contact-title">Be in touch.</h2><p>Curiosity keeps me building, and I’m always happy to collaborate and learn from new challenges. Feel free to reach out anytime — whether it’s for a project, an opportunity, or a quick hello.</p></div>
+          <span class="status-pill">Stay Connected</span>
+        </div>
+        <div class="contact-actions">
+          <button class="copy-email" type="button" aria-label="Copy email address"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><span>Email Address</span></button>
+          <a href="https://github.com/sthabarnabas2007" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/barnabas-shrestha-58a810401" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5H2.2V22h3.3V8.5ZM3.85 2A1.93 1.93 0 1 0 3.85 5.86 1.93 1.93 0 0 0 3.85 2ZM22 14.3c0-4.08-2.18-5.98-5.09-5.98a4.39 4.39 0 0 0-4 2.2V8.5H9.6V22h3.31v-6.68c0-1.76.33-3.46 2.51-3.46 2.15 0 2.17 2 2.17 3.57V22H21v-7.7Z"/></svg>LinkedIn ↗</a>
+          <a href="assets/Barnabas-Shrestha-Resume.pdf" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Zm0 2.5L17.5 8H14ZM8 12h8v1.5H8Zm0 4h8v1.5H8Z"/></svg>View Résumé ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <a class="footer-brand" href="#" aria-label="Barnabas Shrestha, back to top"><img src="assets/logo-bs-footer.png" alt="" width="28" height="28"></a>
+      <div class="footer-right"><div class="footer-social">
+        <a href="https://www.linkedin.com/in/barnabas-shrestha-58a810401" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5H2.2V22h3.3V8.5ZM3.85 2A1.93 1.93 0 1 0 3.85 5.86 1.93 1.93 0 0 0 3.85 2ZM22 14.3c0-4.08-2.18-5.98-5.09-5.98a4.39 4.39 0 0 0-4 2.2V8.5H9.6V22h3.31v-6.68c0-1.76.33-3.46 2.51-3.46 2.15 0 2.17 2 2.17 3.57V22H21v-7.7Z"/></svg></a>
+        <a href="https://github.com/sthabarnabas2007" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+      </div><p>© <span id="year"></span> Barnabas Shrestha</p></div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite">Copied ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
